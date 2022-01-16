@@ -1,0 +1,34 @@
+1) Napis kod (idealne funkci), ktery nacte stupne (float) a prevede je na radiany (i treba naopak)
+
+2) Vygeneruj a vypis N nahodnych celych cisel v nejakem rozmezi (napr 1 az 100 vcetne). 
+Priklad ktery vypise jedno nahodne cislo:
+
+import random
+
+num1 = random.randint(0, 9)
+print(num1)
+
+3) Spocitej samohlasky a souhlasky v zadanem stringu (muzou tam byt i cislice a mezery, uvazujme anglickou abecedu)
+
+4) Jednoducha kalkulacka - nejprve nacti jedno cislo (float), potom nacti jeden znak operace ( +, -, * ci /), potom nacti druhe cislo a vypocitej vysledek
+
+5) Najdi cislo v listu cisel (vypis jestli tam je a pokud ano tak jeho index) (k zamysleni: jaky by byl nejrychlejsi algoritmus, pokud by ten list byl setrideny)
+
+6) Vypocitej Nte cislo fibonnaciho posloupnosti
+
+7) Nacitej cisla ze vstupu dokud neni zadano 'q' a pak vypis jejich minimalni hodnotu, maximalni hodnotu, sumu, prumer a median
+
+8) zamichej nejak list cisel (budes potrebovat random generator, ktery je pouzit v ukolu 2)
+
+9) spocitej faktorial zadaneho cisla
+
+10) vypis zda zadany retezec je palindrom (cte se popredu stejne jako pozadu, priklad: 'madam' je palindrom)
+
+11) FizzBuzz (casto se dava jako uloha pri pohovoru) - vypis cisla od 1 do N, ale kdyz je cislo delitelne 3 tak vypis Fizz, kdyz je delitene 5, tak Buzz, a kdyz je 
+    delitelne 3mi i 5ti tak vypis Fizz Buzz
+Priklad vystupu:
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz ...
+
+12) Kresleni do konzole - obdelnik, trojuhelnik
+
+13) Hlasovaci system - nacist pocet hlasujicich, pote nacitat jejich volbu (napr 1 znamena pro, 0 proti), potom vypsat zda navrh prosel ci ne (pozn. muze byt i remiza)
