@@ -32,3 +32,6 @@ Priklad vystupu:
 12) Kresleni do konzole - obdelnik, trojuhelnik
 
 13) Hlasovaci system - nacist pocet hlasujicich, pote nacitat jejich volbu (napr 1 znamena pro, 0 proti), potom vypsat zda navrh prosel ci ne (pozn. muze byt i remiza)
+
+14) Nacti cisla z big_data/numbers.txt, najdi nejvicekrat zastoupene a vypis kolikrat, dale najdi chybejici v celem intervalu (pouze jedno). Reseni je v souboru big_data/solution.py
+
