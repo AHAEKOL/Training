@@ -3,9 +3,11 @@ import bs4
 import sys
 
 def download_html(link):
+    print("Downloading " + link, end="")
     response = requests.get(link)
     if response.status_code != 200:
         raise Exception(f"The link {link} download failed (status_code={response.status_code})!")
+    print("     OK")
     return response.text
 
 def get_county_data_from_page(link):
