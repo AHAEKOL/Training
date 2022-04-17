@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<bookshop>
+  <info name="Ivan's bookshop">
+    <state>Czech Republic</state>
+    <city>Kutna Hora</city>
+    <address>17. listopadu 100</address>
+  </info>
+  <books>
+    <book name="abcd">
+      <year>2022</year>
+      <description>Cool book</description>
+      <count>1</count>
+    </book>
+    <book name="xyz">
+      <year>2021</year>
+      <description>Boring book</description>
+      <count>5</count>
+    </book>
+  </books>
+</bookshop>

@@ -1,0 +1,73 @@
+1) Prace s datumem a casem (01_date_time.py)
+- mereni casu behu programu
+- prevod datumu a casu na text - local time zone, UTC
+- parsovani datumu a casu z textu
+- datumova/casova aritmetika
+
+2) Argumenty z prikazove radky (02_arguments.py)
+- jednoduchy vypis argumentu
+- pouziti parsovaci knihovny
+
+3) Logovani (03_logging.py)
+- pouziti nejake logovaci knihovny
+- logovani zaroven do console a do souboru
+
+4) Staticka analyza (04_static_analysis.py)
+- vyzkouset pylint (a pouzivat ho vzdy)
+- PEP8
+
+5) Prace se soubory (05_files.py)
+- pojem relativni a absolutni cesta k souboru ci adresari, rozdil v cestach Linux a Windows (lomitka, case senzitivita)
+- prochazeni slozek, kopirovani, presouvani, mazani souboru souboru
+- klicove slovo with a jeho analaog try except finally
+	
+6) XML (06_xml.py)
+- vlastnosti, well formed document
+- zapis, cteni ze souboru
+- specialni znaky a escaping
+
+7) JSON
+- vlastnosti
+- zapis, cteni ze souboru
+- specialni znaky a escaping
+
+8) Binarni data
+- puziti structs - prevod promennych na binarni data a zpet
+- pochopeni Little/Big Endian
+- logicke operace and, or, xor, not (maskovani bitu)	
+
+9) Lambda funkce
+
+Objektove Orientovane Programovani
+- zapouzdreni, abstrakce, inheritance, polymorphismus
+
+
+UnitTesty
+- automaticke testovani funkci a trid/metod
+
+
+SQL
+- pripojeni k databazi, vycteni dat z databaze, ulozeni dat do databaze
+
+
+Graficke aplikace s knihovnou Qt
+button, label, textbox, combobox
+
+
+Vlakna
+- vytvoreni a ukonceni vlakna, synchronizace promennych (Bankeruv problem), semaphore, sleep
+
+
+Sockety
+- IP adressa a port
+- rozdil TCP vs. UDP
+- jednoduchy chat server a klient
+
+Flask nebo Django 
+
+Zaklady regularnich vyrazu
+- hledani patternu, nahrada patternu
+
+Vymyslet si projekt kde bude kombinace co nejvice vyse zmineneho
+-napr. chatovaci server s grafickym clientem, ktery bude ukladat historii do XML/json souboru, logovani ... 
+
