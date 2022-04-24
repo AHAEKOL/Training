@@ -106,9 +106,9 @@ def sum_numbers(words):
 
     pass
 
-def headline():
-    spaces = (30 - len("OCURRENCE")) * " "
-    print("LEN", "|", "OCURRENCE", spaces, "|", "NR.")
+def headline(lenghts):
+    m = max(lenghts.values())
+    print("LEN", "|", f"{'OCURRENCE':<{m}}", "|", "NR.")
 
 def histogram(words):
     lenghts = {}
@@ -119,10 +119,11 @@ def histogram(words):
        else:
            lenghts.update({len(word): 1})
 
-
+    headline(lenghts)
+    m = max(lenghts.values())
     for key in sorted(lenghts.keys()):
-       spaces = (30 - lenghts[key]) * " "
-       print(key, "\t|", "*" * lenghts[key], spaces, "|", lenghts[key])
+
+       print(f"{key : <3}","|",f"{'*'* lenghts[key]:<{m}}","|",lenghts[key])
 
 
 # START OF THE PROGRAM
@@ -149,6 +150,5 @@ sum_numbers(words)
 
 separator()
 
-headline()
 
 histogram(words)
