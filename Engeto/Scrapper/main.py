@@ -2,16 +2,16 @@ import requests
 import bs4
 import sys
 
-def download_html(link):
+def download_whole_html(link):
     print("Downloading " + link, end="")
     response = requests.get(link)
     if response.status_code != 200:
-        raise Exception(f"The link {link} download failed (status_code={response.status_code})!")
+        raise Exception(f"Downloading of the html of the page has failed (status_code={response.status_code})!")
     print("     OK")
     return response.text
 
 def get_county_data_from_page(link):
-    html = download_html(link)
+    html = download_whole_html(link)
     soup = bs4.BeautifulSoup(html, "html.parser")
     tables = soup.find_all('table')
 
@@ -47,7 +47,7 @@ def get_okrsek_links(soup):
 def get_election_data_internal(link, get_parties):
     parties = []
     link = 'https://volby.cz/pls/ps2017nss/' + link
-    html = download_html(link)
+    html = download_whole_html(link)
     soup = bs4.BeautifulSoup(html, "html.parser")
     tables = soup.find_all('table')
     nonBreakSpace = u'\xa0'
@@ -84,7 +84,7 @@ def get_election_data_internal2(soup):
 
 
 def get_election_data(link):
-    html = download_html(link)
+    html = download_whole_html(link)
     soup = bs4.BeautifulSoup(html, "html.parser")
     voters = 0
     envelopes = 0
@@ -108,6 +108,7 @@ def get_election_data(link):
 
 if len(sys.argv) != 3:
     print("Wrong number of arguments (expected 2)!")
+    exit()
 
 link = sys.argv[1]
 output_file = sys.argv[2]
