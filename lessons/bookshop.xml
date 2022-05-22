@@ -2,7 +2,7 @@
 <bookshop>
   <info name="Ivan's bookshop">
     <state>Czech Republic</state>
-    <city>Kutna Hora</city>
+    <city>Kutna&gt; Hora</city>
     <address>17. listopadu 100</address>
   </info>
   <books>
