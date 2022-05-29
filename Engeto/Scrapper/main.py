@@ -61,7 +61,8 @@ def get_okrsek_links(soup):
     :param soup: Soup to page with okrseks
     :return: List of okrseks links
     """
-    okrseks_links = []
+    # we use set to remove duplicates because the page might be inconsistent (missing </tr>)
+    okrseks_links = set()
     rows = soup.find_all('table')[0].find_all("tr")
     for i in range(1, len(rows)):
         cell = rows[i].find_all("td")
@@ -69,8 +70,8 @@ def get_okrsek_links(soup):
             a = c.find_all("a")
             # some table cells are empty - skip those
             if len(a) != 0:
-                okrseks_links.append(a[0].attrs['href'])
-    return okrseks_links
+                okrseks_links.add(a[0].attrs['href'])
+    return sorted(list(okrseks_links))
 
 
 def remove_non_breaking_spaces(input_string):
@@ -217,7 +218,7 @@ def scrap_election_results_to_file(county_link, output_file_path):
             else:
                 csv_data[i].append("0")
 
-    with open(output_file_path, "w") as csv_file:
+    with open(output_file_path, "w", encoding="utf-8") as csv_file:
         # Write CSV header to the csv file
         csv_file.write("psc;nazev;pocet volicu;vydane obalky;platne hlasy;" + ";".join(all_parties_names) + "\n")
 
